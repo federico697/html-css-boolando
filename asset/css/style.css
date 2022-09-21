@@ -3,3 +3,143 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header{
+    background-color: rgb(250, 121, 1);
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.container-head{
+    width: 56%;
+    margin: 0 auto;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+}
+
+img{
+    height: 26px;
+}
+
+section{
+    width: 56%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.card-1, 
+.card-2, 
+.card-3,
+.card-4, 
+.card-5, 
+.card-6{
+    flex-basis: 32%;
+    height: 400px;
+    background-color: gray;
+    margin-top: 150px;
+    position: relative;
+}
+
+.prezzo-scontato{
+    color: red;
+}
+
+.prezzo-listino{
+    text-decoration: line-through;
+}
+
+h6:hover{
+    display: block;
+}
+
+#cuore{
+    font-size: 20px;
+    padding: 2px;
+    background-color: aliceblue;
+    width: 22px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    text-align: center;
+}
+
+.extra{
+    position: absolute;
+    left: 0px;
+    bottom: 20px;
+}
+
+.sconto{
+    padding: 5px;
+    background-color: red;
+    margin-right: 2px;
+    color: white;
+    font-size: 12px;
+}
+
+.sostenibilità{
+    padding: 5px;
+    background-color: green;
+    color: white;
+    font-size: 12px;
+}
+
+.card-1 > img,
+.card-2 > img,
+.card-3 > img,
+.card-4 > img,
+.card-5 > img,
+.card-6 > img{
+    height: 400px;
+}
+
+.foto2{
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.card-1:hover .foto1,
+.card-2:hover .foto1,
+.card-3:hover .foto1,
+.card-4:hover .foto1,
+.card-5:hover .foto1,
+.card-6:hover .foto1{
+    display: none;
+}
+
+.card-1:hover .foto2,
+.card-2:hover .foto2,
+.card-3:hover .foto2,
+.card-4:hover .foto2,
+.card-5:hover .foto2,
+.card-6:hover .foto2{
+    display: block;
+}
+
+.card-1:hover #cuore,
+.card-2:hover #cuore,
+.card-3:hover #cuore,
+.card-4:hover #cuore,
+.card-5:hover #cuore,
+.card-6:hover #cuore{
+    color: red;
+}
